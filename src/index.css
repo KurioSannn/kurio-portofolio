@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-light;
+  @apply font-sans;
+  margin: 0;
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) translateY(-4px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.5) translateY(0px);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle infinite ease-in-out;
+}
+
+.gradient-border {
+  padding: 2px;
+  border-radius: 1.5rem;
+  background: linear-gradient(270deg, #FFA600, #ffcc70, #ff3ace);
+  background-size: 600% 600%;
+  animation: borderMove 6s ease infinite;
+}
+
+.gradient-border img {
+  border-radius: 1.4rem;
+}
+
+@keyframes borderMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes borderFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.animate-borderFlow {
+  animation: borderFlow 6s linear infinite;
+}
+
+/* === STABLE ANIMATED BORDER (NO GLITCH) === */
+
+.commission-border {
+  position: relative;
+  border-radius: 1rem;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    #ff3ace,
+    #ff8a00,
+    #ffcc70,
+    #ff3ace
+  );
+  background-size: 200% 100%;
+  animation: borderSlide 5s linear infinite;
+}
+
+@keyframes borderSlide {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}
