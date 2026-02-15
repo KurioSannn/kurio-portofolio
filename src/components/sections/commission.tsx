@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Reveal from "../../components/sections/reveal";
-import chara1 from "../../assets/makoto.png";
+// import chara1 from "../../assets/makoto.png";
 import chara2 from "../../assets/takashi.png";
 import chara3 from "../../assets/unmei.png";
 import chara4 from "../../assets/design.png";
@@ -15,10 +15,10 @@ type CommissionItem = {
 export default function Commission() {
 
   const commissions: CommissionItem[] = [
-    { image: chara1, title: "HEADSHOT", price: "Rp 25.000" },
-    { image: chara2, title: "BUST UP", price: "Rp 50.000" },
+    { image: chara2, title: "HEADSHOT", price: "Rp 25.000" },
+    { image: "/images/gambar/gambar10.png", title: "BUST UP", price: "Rp 50.000" },
     { image: chara3, title: "FULL BODY", price: "Rp 100.000" },
-    { image: chara4, title: "ILLUSTRATIONS", price: "Rp 125.000" },
+    { image: "/images/gambar/gambar6.png", title: "ILLUSTRATIONS", price: "Rp 125.000" },
     { image: chara4, title: "DESIGN", price: "Rp 35.000" }
   ];
 

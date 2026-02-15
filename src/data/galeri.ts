@@ -42,5 +42,18 @@ export const galeriData: GaleriItem[] = [
     id: "8",
     title: "Artwork 8",
     image: "/images/gambar/gambar8.png",
+  }, {
+    id: "9",
+    title: "Artwork 9",
+    image: "/images/gambar/gambar9.png",
+  },
+  {
+    id: "10",
+    title: "Artwork 10",
+    image: "/images/gambar/gambar10.png",
+  }, {
+    id: "11",
+    title: "Artwork 11",
+    image: "/images/gambar/gambar11.png",
   },
 ];

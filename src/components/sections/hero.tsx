@@ -170,7 +170,7 @@ const particles = useMemo(() => {
         className="
           mt-12
           backdrop-blur-xl
-          bg-white/20
+          bg-black/20
           border border-white/30
           rounded-3xl md:rounded-full
           px-6 py-6 md:px-10 md:py-4
