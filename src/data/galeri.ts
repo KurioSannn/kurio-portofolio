@@ -36,7 +36,7 @@ export const galeriData: GaleriItem[] = [
   },  {
     id: "7",
     title: "Artwork 7",
-    image: "/images/gambar/gambar7.png",
+    image: "/images/gambar/gambar7.jpg",
   },
   {
     id: "8",
