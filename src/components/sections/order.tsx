@@ -94,27 +94,33 @@ export default function Order() {
           </motion.p>
 
         <motion.button
-        onHoverStart={() => setIsHovered(true)}
-        onHoverEnd={() => setIsHovered(false)}
-        onClick={handleRedirect}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        className="
-          relative
-          inline-block
-          mx-auto
-          font-medium
-          bg-white/30
-          backdrop-blur-lg
-          border border-white/30
-          rounded-full
-          px-8 py-3
-          shadow-lg
-          text-2xl
-          overflow-hidden
-          text-white
-        "
-      >
+          onHoverStart={() => setIsHovered(true)}
+          onHoverEnd={() => setIsHovered(false)}
+
+          // ✅ MOBILE SUPPORT
+          onTouchStart={() => setIsHovered(true)}
+          onTouchEnd={() => setIsHovered(false)}
+
+          onClick={handleRedirect}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          className="
+            relative
+            inline-block
+            mx-auto
+            font-medium
+            bg-white/30
+            backdrop-blur-lg
+            border border-white/30
+            rounded-full
+            px-8 py-3
+            shadow-lg
+            text-2xl
+            overflow-hidden
+            text-white
+          "
+        >
+
         {/* TEXT */}
         <motion.span
           className="relative z-10"
